@@ -28,7 +28,7 @@ O site conta com:
 - Divisão de turno.
 
 
-## 🖥️ Tecnologias utilizada
+## 🖥️ Tecnologias utilizadas
 
 Para esse projeto, utilizei: 
 
