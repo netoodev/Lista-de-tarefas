@@ -1,10 +1,7 @@
 :root {
-    --dark-purple: #1E0126;
-    --light-purple: #8416F2;
-    --purple: #7021BF;
-    --grey: #AFA3BF; 
-    --dark-grey: #696273;
+    --orange: #ff5945;
     --white: #FAFAFA;
+    --black: #1A1A1A;
 }
 
 * {
@@ -17,7 +14,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: var(--dark-purple);
+    background-color: var(--white);
 }
 
 main {
@@ -43,9 +40,9 @@ section.menu {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    background: var(--grey);
+    background: var(--orange);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    color: var(--dark-purple);
+    color: var(--white);
 }
 
 section.menu > img {
@@ -55,8 +52,10 @@ section.menu > img {
 }
 
 section.menu > p {
+    max-width: 300px;
     text-align: center;
     font-size: 14px;
+    font-weight: 500;
 }
 
 section.menu > ul {
@@ -74,17 +73,18 @@ section.menu > ul > li > a{
     display: flex;
     justify-content: center;
     border: 1px solid transparent;
-    background-color: var(--purple);
+    background-color: var(--white);
     border-radius: 8px;
     text-decoration: none;
-    color: var(--white);
+    color: var(--orange);
+    font-weight: 600;
     transition: 0.5s;
 }
 
 section.menu > ul > li > a:hover {
     background-color: transparent;
-    color: var(--dark-purple);
-    border: 1px solid var(--purple);
+    color: var(--white);
+    border: 1px solid var(--white);
 }
 
 section.main {
@@ -101,18 +101,23 @@ section.main {
 }
 
 section.main > h1 {
-    color: var(--grey);
+    color: var(--orange);
 }
 
 .list-container {
     width: 100%;
-    height: 100%;
+    min-height: 400px;
     display: flex;
     justify-content: space-between;
-    background: var(--grey);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    color: var(--dark-purple);
+    background: var(--white);
+    border: 1px solid var(--orange);
+    box-shadow: 0 4px 30px rgba(255, 89, 69, 0.2);
+    color: var(--black);
     border-radius: 30px;
+}
+
+.list-container h1 {
+    color: var(--orange);
 }
 
 .left-list-container, .right-list-container {
@@ -125,7 +130,7 @@ section.main > h1 {
 }
 
 .left-list-container {
-    border-right: 1px solid #000;
+    border-right: 1px solid var(--orange);
 }
 
 .content-container {
