@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de tarefas</title>
+    <title>Routine - Organize sua rotina</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -24,20 +25,21 @@
         </section>
         <section class="main">
             <h1>Lista de tarefas</h1>
-            <div class="list-container">
+            <div class="list-container-wrapper">
                 <div class="left-list-container">
                     <h1>Dia</h1>
                     <div class="content-container">
                         <div class="input-container">
-                            <input type="text" id="input-box" placeholder="Adicionar tarefa do dia">
+                            <input type="text" id="input-box-day" placeholder="Adicionar tarefa do dia">
+                            <button onclick="addTaskDay()">Adicionar</button>
                         </div>
-                        <ul>
-                            <li>Fazer café da manhã</li>
+                        <ul id="list-container-day">
+                            <!-- <li class="checked">Fazer café da manhã</li>
                             <li>Ir pra academia</li>
                             <li>Compras no mercado</li>
                             <li>Fazer almoço</li>
                             <li>Limpeza doméstica</li>
-                            <li>Atividade da faculdade</li>
+                            <li>Atividade da faculdade</li> -->
                         </ul>
                     </div>
                 </div>  
@@ -45,15 +47,16 @@
                     <h1>Noite</h1>
                     <div class="content-container">
                         <div class="input-container">
-                            <input type="text" id="input-box" placeholder="Adicionar tarefa da noite">
+                            <input type="text" id="input-box-night" placeholder="Adicionar tarefa da noite">
+                            <button onclick="addTaskNight()">Adicionar</button>
                         </div>
-                        <ul>
-                            <li>Ir para faculdade</li>
+                        <ul id="list-container-night">
+                            <!-- <li>Ir para faculdade</li>
                             <li>Chegar da faculdade</li>
                             <li>Fazer o jantar</li>
                             <li>Estudar</li>
                             <li>Entretenimento (jogar, assistir, ler...)</li>
-                            <li>Ir dormir</li>
+                            <li>Ir dormir</li> -->
                         </ul>
                     </div>
                 </div>
@@ -63,5 +66,6 @@
             </footer>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
