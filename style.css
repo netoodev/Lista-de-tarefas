@@ -1,0 +1,141 @@
+:root {
+    --dark-purple: #1E0126;
+    --light-purple: #8416F2;
+    --purple: #7021BF;
+    --grey: #AFA3BF; 
+    --dark-grey: #696273;
+    --white: #FAFAFA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-purple);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Side menu */
+
+section.menu {
+    width: 30%;
+    height: 100%;
+    padding-inline: 2%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background: var(--grey);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: var(--dark-purple);
+}
+
+section.menu > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section.menu > p {
+    text-align: center;
+    font-size: 14px;
+}
+
+section.menu > ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+section.menu > ul > li > a{
+    width: 200px;
+    padding-block: 8px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    background-color: var(--purple);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+section.menu > ul > li > a:hover {
+    background-color: transparent;
+    color: var(--dark-purple);
+    border: 1px solid var(--purple);
+}
+
+section.main {
+    position: relative;
+    left: 30%;
+    width: 70%;
+    height: 100vh;
+    padding: 2%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+section.main > h1 {
+    color: var(--grey);
+}
+
+.list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: var(--grey);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: var(--dark-purple);
+    border-radius: 30px;
+}
+
+.left-list-container, .right-list-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.left-list-container {
+    border-right: 1px solid #000;
+}
+
+.content-container {
+    width: 100%;
+    padding-block: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container > ul > li {
+    font-weight: 600;
+    font-size: 18px;
+}
